@@ -14,6 +14,7 @@ data class UpdateConfiguration(
         override val frameProcessor: FrameProcessor? = null,
         override val previewFpsRange: FpsRangeSelector? = null,
         override val antiBandingMode: AntiBandingModeSelector? = null,
+        override val sceneMode: SceneModeSelector? = null,
         override val sensorSensitivity: SensorSensitivitySelector? = null,
         override val previewResolution: ResolutionSelector? = null,
         override val pictureResolution: ResolutionSelector? = null
@@ -53,6 +54,12 @@ data class UpdateConfiguration(
         fun antiBandingMode(selector: AntiBandingModeSelector): Builder = apply {
             configuration = configuration.copy(
                     antiBandingMode = selector
+            )
+        }
+
+        fun sceneMode(selector: SceneModeSelector): Builder = apply {
+            configuration = configuration.copy(
+                    sceneMode = selector
             )
         }
 

@@ -23,6 +23,7 @@ private fun SupportedParameters.getCapabilities(): Capabilities {
             jpegQualityRange = jpegQualityRange,
             exposureCompensationRange = exposureCompensationRange,
             antiBandingModes = supportedAutoBandingModes.extract(String::toAntiBandingMode),
+            sceneModes = supportedSceneModes.extract(String::toSceneMode),
             sensorSensitivities = sensorSensitivities.toSet(),
             previewFpsRanges = supportedPreviewFpsRanges.extract { it.toFpsRange() },
             pictureResolutions = pictureResolutions.mapSizes(),

@@ -27,6 +27,7 @@ private infix fun CameraParameters.tryApplyInto(parameters: Camera.Parameters) {
     jpegQuality applyJpegQualityInto parameters
     exposureCompensation applyExposureCompensationInto parameters
     antiBandingMode applyInto parameters
+    sceneMode applyInto parameters
     previewFpsRange applyInto parameters
     previewResolution applyPreviewInto parameters
     sensorSensitivity applySensitivityInto parameters
@@ -51,6 +52,10 @@ private infix fun Int.applyExposureCompensationInto(parameters: Camera.Parameter
 
 private infix fun AntiBandingMode.applyInto(parameters: Camera.Parameters) {
     parameters.antibanding = toCode()
+}
+
+private infix fun SceneMode.applyInto(parameters: Camera.Parameters) {
+    parameters.sceneMode = toCode()
 }
 
 private infix fun FpsRange.applyInto(parameters: Camera.Parameters) {

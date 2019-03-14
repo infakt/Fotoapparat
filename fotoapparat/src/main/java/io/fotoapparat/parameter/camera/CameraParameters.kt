@@ -15,6 +15,7 @@ data class CameraParameters(
         val exposureCompensation: Int,
         val previewFpsRange: FpsRange,
         val antiBandingMode: AntiBandingMode,
+        val sceneMode: SceneMode,
         val sensorSensitivity: Int?,
         val pictureResolution: Resolution,
         val previewResolution: Resolution
@@ -27,6 +28,7 @@ data class CameraParameters(
                 "exposureCompensation:" + exposureCompensation.wrap() +
                 "previewFpsRange:" + previewFpsRange.wrap() +
                 "antiBandingMode:" + antiBandingMode.wrap() +
+                "sceneMode:" + sceneMode.wrap() +
                 "sensorSensitivity:" + sensorSensitivity.wrap() +
                 "pictureResolution:" + pictureResolution.wrap() +
                 "previewResolution:" + previewResolution.wrap()

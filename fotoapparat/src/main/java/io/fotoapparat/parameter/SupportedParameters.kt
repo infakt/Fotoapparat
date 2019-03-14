@@ -78,6 +78,13 @@ internal class SupportedParameters(
     }
 
     /**
+     * @see Camera.Parameters.getSupportedSceneModes
+     */
+    val supportedSceneModes by lazy {
+        cameraParameters.supportedSceneModes ?: listOf(Camera.Parameters.SCENE_MODE_AUTO)
+    }
+
+    /**
      * @return A [IntRange] of supported jpeg qualities that the camera can take photos.
      */
     val jpegQualityRange by lazy {

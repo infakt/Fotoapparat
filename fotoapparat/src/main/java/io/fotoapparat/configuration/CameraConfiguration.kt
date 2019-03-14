@@ -28,6 +28,7 @@ data class CameraConfiguration(
                 hz60(),
                 none()
         ),
+        override val sceneMode: SceneModeSelector = autoSceneMode(),
         override val sensorSensitivity: SensorSensitivitySelector? = null,
         override val pictureResolution: ResolutionSelector = highestResolution(),
         override val previewResolution: ResolutionSelector = highestResolution()
@@ -67,6 +68,12 @@ data class CameraConfiguration(
         fun antiBandingMode(selector: AntiBandingModeSelector): Builder = apply {
             cameraConfiguration.copy(
                     antiBandingMode = selector
+            )
+        }
+
+        fun sceneMode(selector: SceneModeSelector): Builder = apply {
+            cameraConfiguration = cameraConfiguration.copy(
+                    sceneMode = selector
             )
         }
 

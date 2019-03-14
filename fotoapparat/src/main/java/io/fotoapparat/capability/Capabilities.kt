@@ -20,6 +20,7 @@ data class Capabilities(
         val exposureCompensationRange: IntRange,
         val previewFpsRanges: Set<FpsRange>,
         val antiBandingModes: Set<AntiBandingMode>,
+        val sceneModes: Set<SceneMode>,
         val pictureResolutions: Set<Resolution>,
         val previewResolutions: Set<Resolution>,
         val sensorSensitivities: Set<Int>
@@ -45,6 +46,7 @@ data class Capabilities(
                 "jpegQualityRange:" + jpegQualityRange.wrap() +
                 "exposureCompensationRange:" + exposureCompensationRange.wrap() +
                 "antiBandingModes:" + antiBandingModes.wrap() +
+                "sceneModes:" + sceneModes.wrap() +
                 "previewFpsRanges:" + previewFpsRanges.wrap() +
                 "pictureResolutions:" + pictureResolutions.wrap() +
                 "previewResolutions:" + previewResolutions.wrap() +

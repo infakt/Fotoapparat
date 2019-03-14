@@ -11,6 +11,7 @@ interface Configuration {
     val frameProcessor: FrameProcessor?
     val previewFpsRange: FpsRangeSelector?
     val antiBandingMode: AntiBandingModeSelector?
+    val sceneMode: SceneModeSelector?
     val sensorSensitivity: SensorSensitivitySelector?
     val previewResolution: ResolutionSelector?
     val pictureResolution: ResolutionSelector?

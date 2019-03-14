@@ -34,6 +34,7 @@ internal fun getCameraParameters(
                     exposureCompensation = exposureCompensation selectFrom exposureCompensationRange,
                     previewFpsRange = previewFpsRange selectFrom previewFpsRanges,
                     antiBandingMode = antiBandingMode selectFrom antiBandingModes,
+                    sceneMode = sceneMode selectFrom sceneModes,
                     pictureResolution = selectedPictureResolution,
                     previewResolution = validPreviewSizeSelector selectFrom previewResolutions,
                     sensorSensitivity = sensorSensitivity selectOptionalFrom sensorSensitivities
