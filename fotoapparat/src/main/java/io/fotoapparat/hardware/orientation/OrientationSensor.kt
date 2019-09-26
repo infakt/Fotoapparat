@@ -26,7 +26,7 @@ internal open class OrientationSensor(
 
                     if (newState != lastKnownOrientationState) {
                         lastKnownOrientationState = newState
-                        listener(newState)
+                        //listener(newState)
                     }
                 }
     }
