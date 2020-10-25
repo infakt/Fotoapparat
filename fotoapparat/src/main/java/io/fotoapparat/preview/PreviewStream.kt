@@ -8,7 +8,6 @@ import io.fotoapparat.hardware.frameProcessingExecutor
 import io.fotoapparat.hardware.orientation.Orientation
 import io.fotoapparat.parameter.Resolution
 import io.fotoapparat.util.FrameProcessor
-import java.util.*
 
 /**
  * Preview stream of Camera.

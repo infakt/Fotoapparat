@@ -1,7 +1,6 @@
 package io.fotoapparat.util
 
 import io.fotoapparat.parameter.FpsRange
-import java.util.*
 
 /**
  * Comparator based on bounds check. Lower bound has higher priority.

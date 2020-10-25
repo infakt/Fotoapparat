@@ -1,7 +1,7 @@
 package io.fotoapparat.preview
 
 import io.fotoapparat.parameter.Resolution
-import java.util.*
+import java.util.Arrays
 
 /**
  * Frame of the preview stream.
