@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android'
 group = 'io.fotoapparat'
 
 android {
+    namespace = "io.fotoapparat.adapters"
     buildToolsVersion versions.android.buildTools
     compileSdkVersion versions.sdk.target
 

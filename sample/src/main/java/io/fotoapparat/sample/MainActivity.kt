@@ -14,7 +14,6 @@ import io.fotoapparat.parameter.Flash
 import io.fotoapparat.parameter.Zoom
 import io.fotoapparat.result.transformer.scaled
 import io.fotoapparat.selector.*
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 import kotlin.math.roundToInt
 
